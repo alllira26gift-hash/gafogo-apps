@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#040E21">
+<meta name="description" content="Descarga las aplicaciones oficiales de GafoGo para usuarios y repartidores en Chiclayo y Lambayeque.">
+<title>GafoGo Downloads | Navidad 2026 (Android)</title>
+<style>
+:root{--bg-dark:#040E21;--bg-mid:#081C3E;--card-bg:rgba(12,34,72,.80);--gold:#FFB800;--gold-light:#FFE066;--blue-btn:#0066FF;--blue-btn-dark:#0044CC;--xmas-red:#D92638;--text-main:#FFF;--text-muted:#CBD5E1;--border-gold:rgba(255,184,0,.40)}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{min-height:100%;background:var(--bg-dark)}
+body{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(circle at top,#0D2E66 0%,var(--bg-mid) 48%,var(--bg-dark) 100%);color:var(--text-main);min-height:100vh;overflow-x:hidden;line-height:1.5}
+#snow-canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.container{position:relative;z-index:2;width:min(100% - 24px,540px);margin:0 auto;padding:26px 0 38px}
+header{text-align:center;margin-bottom:24px}
+.badge-xmas{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,var(--xmas-red),#9E1422);color:#fff;font-size:12px;font-weight:800;padding:6px 14px;border-radius:50px;border:1px solid #ffffff40;box-shadow:0 4px 14px #D9263873;margin-bottom:14px}
+header h1{font-size:clamp(25px,6vw,30px);font-weight:900;line-height:1.2;margin-bottom:10px;background:linear-gradient(to right,#fff 20%,var(--gold-light) 80%);-webkit-background-clip:text;background-clip:text;color:transparent}
+header p{font-size:14.5px;color:var(--text-muted)}
+.banners-stack{display:flex;flex-direction:column;gap:16px;margin-bottom:20px}
+.banner-card{display:block;border-radius:20px;overflow:hidden;border:2px solid var(--border-gold);box-shadow:0 12px 28px #0007;background:#061530;text-decoration:none;transition:transform .18s ease}
+.banner-card:hover,.btn-download:hover{transform:translateY(-2px)}
+.banner-card img{width:100%;height:auto;display:block}
+.client-hero-banner{background:linear-gradient(135deg,#072252,#0D3B8E 55%,#06183A);padding:20px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:190px}
+.client-hero-text{text-align:left;flex:1}
+.client-hero-tag{display:inline-block;background:#FFB8002E;color:var(--gold-light);font-size:11px;font-weight:800;padding:3px 10px;border-radius:20px;margin-bottom:6px;border:1px solid #FFB80059}
+.client-hero-text h2{font-size:21px;font-weight:900;margin-bottom:6px}
+.client-hero-text p{font-size:12.5px;color:#E2E8F0;margin-bottom:12px}
+.pill-cta-gold{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,var(--gold),#F59E0B);color:#0A192F;font-size:12px;font-weight:900;padding:9px 14px;border-radius:50px}
+.hero-icon{flex:0 0 auto;font-size:48px;filter:drop-shadow(0 5px 8px #0006)}
+.buttons-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:24px}
+@media(min-width:480px){.buttons-grid{grid-template-columns:1fr 1fr}}
+.btn-download{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:76px;padding:15px 16px;border-radius:16px;font-size:16px;font-weight:800;text-decoration:none;transition:transform .18s ease}
+.btn-clientes{background:linear-gradient(135deg,var(--blue-btn),var(--blue-btn-dark));color:#fff;border:1px solid #ffffff40}
+.btn-repartidores{background:linear-gradient(135deg,var(--gold),#E09600);color:#0A192F;border:1px solid #ffffff59}
+.btn-sub{display:block;font-size:11.5px;font-weight:600;opacity:.9}.btn-icon{font-size:25px;line-height:1}
+.section-box{background:var(--card-bg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid #ffffff1f;border-radius:20px;padding:20px 18px;margin-bottom:18px;box-shadow:0 10px 26px #0003}
+.section-title{font-size:17px;font-weight:800;color:var(--gold-light);margin-bottom:14px}
+.feature-item{display:flex;align-items:flex-start;gap:12px;background:#040E218C;padding:12px;border-radius:14px;border:1px solid #ffffff0f;margin-bottom:10px}
+.feature-icon{flex:0 0 25px;font-size:20px;text-align:center}.feature-info{min-width:0}
+.feature-info h3{font-size:14px;font-weight:800;color:#fff;margin-bottom:3px}.feature-info p{font-size:12.5px;color:var(--text-muted)}
+.install-note{font-size:13px;color:var(--text-muted)}.install-note+.install-note{margin-top:9px}
+footer{text-align:center;font-size:12px;color:#94A3B8;margin-top:22px;padding:0 8px}
+a:focus-visible{outline:3px solid var(--gold-light);outline-offset:4px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<canvas id="snow-canvas" aria-hidden="true"></canvas>
+<main class="container">
+<header>
+<div class="badge-xmas">🎄 EDICIÓN NAVIDAD 2026 • VERSIÓN OFICIAL v1.0</div>
+<h1>Descarga GafoGo en tu Android</h1>
+<p>Muévete rápido y envía lo que necesites en <b>Chiclayo, Lambayeque, Pimentel, Eten y Reque</b> con seguimiento animado en tiempo real.</p>
+</header>
+<div class="banners-stack">
+<a href="https://github.com/alllira26gift-hash/gafogo-apps/releases/download/v1.0/GafoGo-Usuarios.apk" download="GafoGo-Usuarios.apk" class="banner-card" aria-label="Descargar GafoGo Clientes APK">
+<div class="client-hero-banner"><div class="client-hero-text"><span class="client-hero-tag">📲 APP PARA USUARIOS</span><h2>GafoGo Clientes</h2><p>Traslados, envíos, compras y diligencias con búsqueda exacta por calle y número.</p><span class="pill-cta-gold">⬇️ DESCARGAR APK CLIENTES</span></div><div class="hero-icon" aria-hidden="true">🎅</div></div>
+</a>
+<a href="https://github.com/alllira26gift-hash/gafogo-apps/releases/download/v1.0/GafoGo-Repartidores.apk" download="GafoGo-Repartidores.apk" class="banner-card" aria-label="Descargar GafoGo Repartidores APK">
+<img src="https://res.cloudinary.com/coghlzip/image/upload/v1795728875/Banner_de_descarga_GafoGo_para_repartidores-1.png" alt="Descargar GafoGo Repartidores APK" loading="lazy">
+</a>
+</div>
+<div class="buttons-grid" aria-label="Descargas directas">
+<a href="https://github.com/alllira26gift-hash/gafogo-apps/releases/download/v1.0/GafoGo-Usuarios.apk" download="GafoGo-Usuarios.apk" class="btn-download btn-clientes"><span class="btn-icon" aria-hidden="true">📲</span><span style="text-align:left;line-height:1.2">App Clientes<span class="btn-sub">Descarga directa (APK)</span></span></a>
+<a href="https://github.com/alllira26gift-hash/gafogo-apps/releases/download/v1.0/GafoGo-Repartidores.apk" download="GafoGo-Repartidores.apk" class="btn-download btn-repartidores"><span class="btn-icon" aria-hidden="true">🏍️</span><span style="text-align:left;line-height:1.2">App Repartidores<span class="btn-sub">Descarga directa (APK)</span></span></a>
+</div>
+<section class="section-box">
+<div class="section-title">✨ Todo lo nuevo en GafoGo</div>
+<div class="feature-item"><div class="feature-icon">🧭</div><div class="feature-info"><h3>Mapa 3D con Mascota Animada en Tiempo Real</h3><p>Sigue el recorrido de tu repartidor por la pista con nuestra mascota Sicán animada en cada etapa: en camino, en el punto de recojo y al entregar tu pedido.</p></div></div>
+<div class="feature-item"><div class="feature-icon">📍</div><div class="feature-info"><h3>Buscador Inteligente por Calle y Número</h3><p>Encuentra direcciones exactas y sugerencias cercanas al instante en Chiclayo, Lambayeque, Pimentel, Eten y Reque, con rutas dinámicas Punto A → Punto B.</p></div></div>
+<div class="feature-item"><div class="feature-icon">📦</div><div class="feature-info"><h3>4 Servicios en una Sola App</h3><p>Solicita <b>Traslado</b>, <b>Enviar paquete</b>, <b>Hacer compra</b> u <b>Otra diligencia</b> en segundos con tarifas claras y chat directo.</p></div></div>
+<div class="feature-item" style="margin-bottom:0"><div class="feature-icon">🔔</div><div class="feature-info"><h3>Alertas Inteligentes de Llegada</h3><p>Recibe notificaciones y avisos sonoros cuando tu repartidor está cerca de tu puerta.</p></div></div>
+</section>
+<section class="section-box">
+<div class="section-title">🛡️ ¿Cómo instalar en 2 pasos?</div>
+<p class="install-note"><b>1. Descarga el APK:</b> Si tu navegador muestra una advertencia de seguridad, verifica que el archivo provenga del enlace oficial de GitHub Releases antes de continuar.</p>
+<p class="install-note"><b>2. Instala en tu teléfono:</b> Abre el archivo <b>.apk</b> descargado y sigue las indicaciones de Android. Si el sistema lo solicita, autoriza la instalación para el navegador o gestor de archivos que utilizaste.</p>
+</section>
+<footer>© 2026 GafoGo • Chiclayo &amp; Lambayeque, Perú.</footer>
+</main>
+<script>
+(function(){
+  const canvas=document.getElementById('snow-canvas');
+  if(!canvas)return;
+  const ctx=canvas.getContext('2d');
+  if(!ctx)return;
+  let w=0,h=0,flakes=[],frame=0;
+  const reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function resize(){
+    const ratio=Math.min(window.devicePixelRatio||1,2);
+    w=window.innerWidth;h=window.innerHeight;
+    canvas.width=Math.floor(w*ratio);canvas.height=Math.floor(h*ratio);
+    canvas.style.width=w+'px';canvas.style.height=h+'px';
+    ctx.setTransform(ratio,0,0,ratio,0,0);
+    const count=Math.max(20,Math.min(65,Math.floor(w/8)));
+    flakes=Array.from({length:count},()=>({x:Math.random()*w,y:Math.random()*h,r:Math.random()*2.1+.7,speed:Math.random()*.75+.35,drift:Math.random()*.55-.275,opacity:Math.random()*.45+.3}));
+  }
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    for(const f of flakes){
+      ctx.beginPath();ctx.fillStyle='rgba(255,255,255,'+f.opacity+')';ctx.arc(f.x,f.y,f.r,0,Math.PI*2);ctx.fill();
+      f.y+=f.speed;f.x+=f.drift;
+      if(f.y>h+5){f.y=-5;f.x=Math.random()*w}
+      if(f.x>w+5)f.x=-5;if(f.x< -5)f.x=w+5;
+    }
+    frame=requestAnimationFrame(draw);
+  }
+  function staticSnow(){
+    ctx.clearRect(0,0,w,h);ctx.fillStyle='rgba(255,255,255,.55)';
+    for(const f of flakes){ctx.beginPath();ctx.arc(f.x,f.y,f.r,0,Math.PI*2);ctx.fill()}
+  }
+  resize();if(reduced)staticSnow();else draw();
+  window.addEventListener('resize',()=>{resize();if(reduced)staticSnow()},{passive:true});
+  document.addEventListener('visibilitychange',()=>{
+    if(reduced)return;
+    if(document.hidden)cancelAnimationFrame(frame);
+    else{cancelAnimationFrame(frame);draw()}
+  });
+})();
+</script>
+</body>
+</html>
